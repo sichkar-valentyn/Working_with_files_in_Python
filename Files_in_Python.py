@@ -1,3 +1,14 @@
+# File: Files_in_Python.py
+# Description: Examples on how to work with files in Python
+# Environment: PyCharm and Anaconda environment
+#
+# MIT License
+# Copyright (c) 2018 Valentyn N Sichkar
+# github.com/sichkar-valentyn
+#
+# Reference to:
+# [1] Valentyn N Sichkar. Examples on how to work with files in Python // GitHub platform [Electronic resource]. URL: https://github.com/sichkar-valentyn/Working_with_files_in_Python (date of access: XX.XX.XXXX)
+
 
 # Possible modes to open file with:
 # r (read) - open for reading (by default)
@@ -166,7 +177,7 @@ shutil.copy('test.txt', 'test_test.txt')
 # And showing only that directories which contain the .py files
 # Also, sorting the results in lexicographical order
 lst = []
-for current_dir, dirs, files in os.walk('main'):
+for current_dir, dirs, files in os.walk('main'):  # You can use your own directory or any other
     for x in files:
         if '.py' in x:
             lst += [current_dir]
